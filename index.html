@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://preview.colorlib.com/theme/calvino/assets/img/icon/xfavicon.png.pagespeed.ic.RcewcVYUrw.webp"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calvino</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- main navbar -->
+      <div id="navbar" class="hidden lg:block lg:w-full lg:z-10">
+        <div class="flex flex-row justify-between mx-8">
+          <div class="flex flex-row items-center flex-shrink-0">
+            <div class="h-12 mr-8">
+              <a href="index.html"
+                ><img
+                  src="data:image/webp;base64,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"
+              /></a>
+            </div>
+            <nav>
+              <ul class="flex flex-row items-center justify-between">
+                <li class="relative mx-4 py-7 group hover:text-pink-400">
+                  <a
+                    class="px-2 text-lg after:duration-300 after:delay-100 after:ease-out after:transition-all after:absolute after:bottom-0 after:-left-1 after:w-0 after:h-0.5 after:bg-pink-400 group-hover:after:w-full group-hover:after:left-0"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="relative mx-4 py-7 group hover:text-pink-400">
+                  <a
+                    class="px-2 text-lg after:duration-300 after:delay-100 after:ease-out after:transition-all after:absolute after:bottom-0 after:-left-1 after:w-0 after:h-0.5 after:bg-pink-400 group-hover:after:w-full group-hover:after:left-0"
+                    href="#"
+                    >About</a
+                  >
+                </li>
+                <li class="relative mx-4 py-7 group hover:text-pink-400">
+                  <a
+                    class="px-2 text-lg after:duration-300 after:delay-100 after:ease-out after:transition-all after:absolute after:bottom-0 after:-left-1 after:w-0 after:h-0.5 after:bg-pink-400 group-hover:after:w-full group-hover:after:left-0"
+                    href="#"
+                    >Services</a
+                  >
+                </li>
+                <li class="relative mx-4 py-7 group hover:text-pink-400">
+                  <a
+                    class="px-2 text-lg after:duration-300 after:delay-100 after:ease-out after:transition-all after:absolute after:bottom-0 after:-left-1 after:w-0 after:h-0.5 after:bg-pink-400 group-hover:after:w-full group-hover:after:left-0"
+                    href="#"
+                    >Case study</a
+                  >
+                </li>
+                <li class="relative mx-4 py-7 group hover:text-pink-400">
+                  <a
+                    class="px-2 text-lg after:duration-300 after:delay-100 after:ease-out after:transition-all after:absolute after:bottom-0 after:-left-1 after:w-0 after:h-0.5 after:bg-pink-400 group-hover:after:w-full group-hover:after:left-0"
+                    href="#"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex flex-row items-center justify-between">
+            <p class="flex-shrink-0 px-8 py-4 text-xl">Call Us</p>
+            <button
+              class="flex-shrink-0 py-3 text-xl font-bold text-white transition-all duration-300 rounded-full px-9 ring-1 ring-pink-300 bg-gradient-to-b from-pink-400 to-orange-400 hover:ring-1 hover:ring-pink-500"
+            >
+              Let's talk
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- end of main navbar -->
+      <!-- mobile navbar -->
+      <div id="mob-navbar" class="z-10 w-full lg:hidden">
+        <div class="flex flex-row items-center justify-between">
+          <div class="w-24 py-4 ml-8">
+            <a href="index.html"
+              ><img
+                src="data:image/webp;base64,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"
+            /></a>
+          </div>
+          <button
+            id="menu-btn"
+            class="relative w-10 h-10 text-gray-500 bg-white focus:outline-none"
+          >
+            <span
+              aria-hidden="true"
+              class="block -translate-y-1.5 absolute h-0.5 w-5 bg-current transition-transform duration-500 ease-in-out"
+            ></span>
+            <span
+              aria-hidden="true"
+              class="block absolute h-0.5 w-5 bg-current transition-transform duration-500 ease-in-out"
+            ></span>
+            <span
+              aria-hidden="true"
+              class="block translate-y-1.5 absolute h-0.5 w-5 bg-current transition-transform duration-500 ease-in-out"
+            ></span>
+          </button>
+        </div>
+        <!-- mobile menu items -->
+        <div
+          id="mobile-menu"
+          class="absolute z-10 w-full pt-2 transition-transform duration-300 ease-out delay-100 origin-top scale-y-0 bg-gray-100 drop-shadow-2xl boxs lg:hidden"
+        >
+          <div id="mobile-menu-items" class="flex flex-col text-center">
+            <a
+              class="py-4 transition-colors duration-300 ease-out delay-150 hover:text-pink-500 hover:bg-gray-200"
+              href="#"
+              >Home</a
+            >
+            <a
+              class="py-4 transition-colors duration-300 ease-out delay-150 hover:text-pink-500 hover:bg-gray-200"
+              href="#"
+              >About</a
+            >
+            <a
+              class="py-4 transition-colors duration-300 ease-out delay-150 hover:text-pink-500 hover:bg-gray-200"
+              href="#"
+              >Services</a
+            >
+            <a
+              class="py-4 transition-colors duration-300 ease-out delay-150 hover:text-pink-500 hover:bg-gray-200"
+              href="#"
+              >Case Study</a
+            >
+            <a
+              class="py-4 mb-2 transition-colors duration-300 ease-out delay-150 hover:text-pink-500 hover:bg-gray-200"
+              href="#"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <!-- end of mobile menu items -->
+      </div>
+      <!-- end of mobile navbar -->
+    </header>
+    <main>
+      <div
+        class="lg:py-48 lg:-mt-24 lg:bg-center lg:bg-cover lg:bg-hero-pattern"
+      >
+        <div
+          class="flex flex-row items-center justify-between mx-8 mt-8 lg:mx-48"
+        >
+          <div class="w-full lg:w-1/2">
+            <span
+              class="px-4 py-1 text-xs text-pink-500 bg-white border border-pink-300 rounded-full"
+              >Digital Marketing Expert</span
+            >
+            <h1
+              class="mt-6 min-w-min text-4xl lg:text-6xl font-['Nunito'] font-bold leading-tight"
+            >
+              We bring you new customers
+            </h1>
+            <p class="mt-6">
+              We build effective strategies to help you reach customers and
+              prospects across the entire web.
+            </p>
+            <button
+              class="mt-12 px-9 py-4 font-[Nunito] font-[700] text-white transition-all duration-300 rounded-full ring-1 ring-pink-300 bg-gradient-to-b from-pink-400 to-orange-400 hover:ring-1 hover:ring-pink-500"
+            >
+              Explore services
+            </button>
+          </div>
+          <div class="hidden lg:block">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-20 h-20 text-pink-500"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section
+      class="relative flex flex-col items-center px-8 mt-20 lg:mt-2 lg:mx-48"
+    >
+      <span class="text-xs tracking-widest text-pink-500 uppercase"
+        >Our Services</span
+      >
+      <div
+        class="mt-8 font-['Nunito'] max-w-md text-center font-bold text-2xl lg:text-4xl leading-tight"
+      >
+        Provide Awesome Service With Our Tools
+      </div>
+      <div class="flex flex-col gap-8 mt-20 lg:flex-row">
+        <div
+          class="relative w-full lg:w-1/4 bg-gray-50 p-8 rounded-md drop-shadow-2xl group before:duration-500 before:delay-75 before:ease-out before:transition-all before:-z-[1] before:absolute before:bottom-0 before:left-0 before:rounded-md before:w-full before:h-0 before:bg-sky-900 hover:before:h-full"
+        >
+          <div class="group-hover:text-slate-100">
+            <h5 class="text-xl font-semibold">
+              <a href="#">Discover, Explore the Product</a>
+            </h5>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-16 h-16 mt-10 text-pink-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            <p class="mt-10">
+              Effective strategies to help you reach customers.
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative w-full lg:w-1/4 bg-gray-50 p-8 rounded-md drop-shadow-2xl group before:duration-500 before:delay-75 before:ease-out before:transition-all before:-z-[1] before:absolute before:bottom-0 before:left-0 before:rounded-md before:w-full before:h-0 before:bg-sky-900 hover:before:h-full"
+        >
+          <div class="group-hover:text-slate-100">
+            <h5 class="text-xl font-semibold">
+              <a href="#">Discover, Explore the Product</a>
+            </h5>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-16 h-16 mt-10 text-pink-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            <p class="mt-10">
+              Effective strategies to help you reach customers.
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative w-full lg:w-1/4 bg-gray-50 p-8 rounded-md drop-shadow-2xl group before:duration-500 before:delay-75 before:ease-out before:transition-all before:-z-[1] before:absolute before:bottom-0 before:left-0 before:rounded-md before:w-full before:h-0 before:bg-sky-900 hover:before:h-full"
+        >
+          <div class="group-hover:text-slate-100">
+            <h5 class="text-xl font-semibold">
+              <a href="#">Discover, Explore the Product</a>
+            </h5>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-16 h-16 mt-10 text-pink-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            <p class="mt-10">
+              Effective strategies to help you reach customers.
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative w-full lg:w-1/4 bg-gray-50 p-8 rounded-md drop-shadow-2xl group before:duration-500 before:delay-75 before:ease-out before:transition-all before:-z-[1] before:absolute before:bottom-0 before:left-0 before:rounded-md before:w-full before:h-0 before:bg-sky-900 hover:before:h-full"
+        >
+          <div class="group-hover:text-slate-100">
+            <h5 class="text-xl font-semibold">
+              <a href="#">Discover, Explore the Product</a>
+            </h5>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-16 h-16 mt-10 text-pink-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            <p class="mt-10">
+              Effective strategies to help you reach customers.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="absolute right-0 hidden -bottom-20 lg:block -z-10">
+        <svg width="400" height="280" viewBox="5 5 385 270">
+          <defs>
+            <pattern
+              id="hideout"
+              x="0"
+              y="0"
+              width="40"
+              height="40"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                class="text-gray-200"
+                fill="currentColor"
+                d="M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z"
+              />
+            </pattern>
+          </defs>
+          <rect
+            x="0"
+            y="0"
+            width="400"
+            height="280"
+            fill="url(#hideout)"
+          ></rect>
+        </svg>
+      </div>
+    </section>
+    <section class="mt-40 bg-no-repeat bg-cover bg-bottom-pattern">
+      <div
+        class="flex flex-col items-center justify-between lg:px-32 lg:py-16 lg:flex-row"
+      >
+        <div class="hidden lg:block lg:w-1/2"></div>
+        <div class="w-full lg:max-w-md">
+          <div
+            class="flex flex-col px-8 py-10 m-8 text-center text-white bg-gradient-to-b from-pink-500 to-orange-400"
+          >
+            <h5 class="mt-10 text-3xl font-bold">
+              Interested to<br />
+              Digging Dipper?
+            </h5>
+            <p class="mt-10">
+              We're out to create purposeful spaces that balance art and
+              creativity with science and strategy.
+            </p>
+            <a
+              href="contact.html"
+              class="self-center px-8 py-4 mt-10 font-[500] text-xl border border-pink-100 rounded-full"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="svg-pattern">
+      <div
+        class="flex flex-col items-start justify-between gap-8 mx-8 py-36 lg:flex-row lg:mx-10"
+      >
+        <div class="w-full lg:w-1/5">
+          <div class="w-24 lg:w-48">
+            <a href="index.html"
+              ><img
+                src="data:image/webp;base64,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"
+            /></a>
+            <p>Lorem, ipsum.</p>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/5">
+          <h4 class="text-xl font-bold">Navigation</h4>
+          <ul class="flex flex-col gap-3 mt-8 text-gray-400">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="w-full lg:w-1/5">
+          <h4 class="text-xl font-bold">Services</h4>
+          <ul class="flex flex-col gap-3 mt-8 text-gray-400">
+            <li><a href="#">Drone Mapping</a></li>
+            <li><a href="#"> Real State</a></li>
+            <li><a href="#">Commercial</a></li>
+            <li><a href="#">Construction</a></li>
+          </ul>
+        </div>
+        <div class="w-full lg:w-1/5">
+          <h4 class="text-xl font-bold">Support</h4>
+          <ul class="flex flex-col gap-3 mt-8 text-gray-400">
+            <li><a href="#">Drone Mapping</a></li>
+            <li><a href="#"> Real State</a></li>
+            <li><a href="#">Commercial</a></li>
+            <li><a href="#">Construction</a></li>
+          </ul>
+        </div>
+        <div class="w-full lg:w-1/5">
+          <h4 class="text-xl font-bold">Contact Us</h4>
+          <ul class="flex flex-col gap-3 mt-8 text-gray-400">
+            <li><a href="#">contact@calvino.com</a></li>
+            <li>
+              <a class="text-lg font-semibold text-pink-500 underline" href="#"
+                >10 (87) 738-3940</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="py-4 text-center bg-white">
+        <p class="p-2">
+          Copyright ©2022 All rights reserved | This template is made with
+          <span class="relative inline-flex items-baseline top-0.5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4 text-pink-500"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+          by Colorlib
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const closeBtn = document.getElementById("close-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("scale-y-0");
+        menuBtn.getElementsByTagName("span")[0].classList.toggle("rotate-45");
+        menuBtn
+          .getElementsByTagName("span")[0]
+          .classList.toggle("-translate-y-1.5");
+
+        menuBtn.getElementsByTagName("span")[2].classList.toggle("-rotate-45");
+        menuBtn
+          .getElementsByTagName("span")[2]
+          .classList.toggle("translate-y-1.5");
+
+        menuBtn.getElementsByTagName("span")[1].classList.toggle("scale-0");
+      });
+
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+      var mobNavbar = document.getElementById("mob-navbar");
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= 200) {
+          navbar.classList.add(
+            "fixed",
+            "top-0",
+            "animate-fadeInDown",
+            "drop-shadow-2xl",
+            "bg-slate-50"
+          );
+          mobNavbar.classList.add(
+            "fixed",
+            "top-0",
+            "animate-fadeInDown",
+            "drop-shadow-2xl",
+            "bg-slate-50"
+          );
+        } else {
+          navbar.classList.remove(
+            "fixed",
+            "top-0",
+            "animate-fadeInDown",
+            "drop-shadow-2xl",
+            "bg-slate-50"
+          );
+          mobNavbar.classList.remove(
+            "fixed",
+            "top-0",
+            "animate-fadeInDown",
+            "drop-shadow-2xl",
+            "bg-slate-50"
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
