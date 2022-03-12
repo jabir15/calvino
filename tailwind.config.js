@@ -12,8 +12,6 @@ module.exports = {
         fadeInDown: "fadeInDown 300ms ease-in-out",
       },
       backgroundImage: {
-        "hero-pattern":
-          "url('https://preview.colorlib.com/theme/calvino/assets/img/hero/h1_hero1.png')",
         "bottom-pattern":
           "url('https://preview.colorlib.com/theme/calvino/assets/img/gallery/contact-bg.jpg')",
       },
