@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth ">
 
 <head>
   <meta charset="UTF-8" />
@@ -33,11 +33,11 @@
               </li>
               <li class="relative mx-4 py-7 group hover:text-pink-400">
                 <a class="px-2 text-lg after:duration-300 after:delay-100 after:ease-out after:transition-all after:absolute after:bottom-0 after:-left-1 after:w-0 after:h-0.5 after:bg-pink-400 group-hover:after:w-full group-hover:after:left-0"
-                  href="#">About</a>
+                  href="#services">Services</a>
               </li>
               <li class="relative mx-4 py-7 group hover:text-pink-400">
                 <a class="px-2 text-lg after:duration-300 after:delay-100 after:ease-out after:transition-all after:absolute after:bottom-0 after:-left-1 after:w-0 after:h-0.5 after:bg-pink-400 group-hover:after:w-full group-hover:after:left-0"
-                  href="#">Services</a>
+                  href="#about">About</a>
               </li>
               <li class="relative mx-4 py-7 group hover:text-pink-400">
                 <a class="px-2 text-lg after:duration-300 after:delay-100 after:ease-out after:transition-all after:absolute after:bottom-0 after:-left-1 after:w-0 after:h-0.5 after:bg-pink-400 group-hover:after:w-full group-hover:after:left-0"
@@ -45,7 +45,7 @@
               </li>
               <li class="relative mx-4 py-7 group hover:text-pink-400">
                 <a class="px-2 text-lg after:duration-300 after:delay-100 after:ease-out after:transition-all after:absolute after:bottom-0 after:-left-1 after:w-0 after:h-0.5 after:bg-pink-400 group-hover:after:w-full group-hover:after:left-0"
-                  href="#">Contact</a>
+                  href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
@@ -82,13 +82,13 @@
           <a class="py-4 transition-colors duration-300 ease-out delay-150 hover:text-pink-500 hover:bg-gray-200"
             href="#">Home</a>
           <a class="py-4 transition-colors duration-300 ease-out delay-150 hover:text-pink-500 hover:bg-gray-200"
-            href="#">About</a>
+            href="#services">Services</a>
           <a class="py-4 transition-colors duration-300 ease-out delay-150 hover:text-pink-500 hover:bg-gray-200"
-            href="#">Services</a>
+            href="#about">About</a>
           <a class="py-4 transition-colors duration-300 ease-out delay-150 hover:text-pink-500 hover:bg-gray-200"
             href="#">Case Study</a>
           <a class="py-4 mb-2 transition-colors duration-300 ease-out delay-150 hover:text-pink-500 hover:bg-gray-200"
-            href="#">Contact</a>
+            href="#contact">Contact</a>
         </div>
       </div>
       <!-- end of mobile menu items -->
@@ -99,19 +99,14 @@
     <svg height="0" width="0">
       <defs>
         <clipPath id="svgPath2" clipPathUnits="objectBoundingBox">
-          <path
-            id="circleWithCurve2"
-            stroke="#000000"
-            d="
+          <path id="circleWithCurve2" stroke="#000000" d="
             M 0.996 -0.354 C 0.279 0.03 0.52 0.981 1 1 Z
-            "
-          />
+            " />
         </clipPath>
       </defs>
     </svg>
-    <div class="absolute inset-0 svg-main-clipped bg-center bg-cover h-[700px] -z-10 bg-bottom-pattern " ></div>
     <section class="flex flex-row items-center bg-gradient-to-br from-pink-50">
-      <div class="flex flex-row items-center  justify-between w-full max-w-6xl h-[700px] px-8 mx-auto">
+      <div class="flex flex-row items-center justify-between w-full max-w-6xl h-[700px] px-8 mx-auto z-[1]">
         <div class="w-full lg:w-1/2">
           <span class="px-4 py-1 text-xs text-pink-500 bg-white border border-pink-300 rounded-full">Digital Marketing
             Expert</span>
@@ -136,11 +131,11 @@
           </svg>
         </div>
       </div>
+      <div class="absolute inset-0 svg-main-clipped bg-center bg-cover h-[700px] bg-bottom-pattern "></div>
     </section>
-
     <!-- Services section -->
-    <section class="flex flex-row items-center">
-      <div class="relative flex flex-col items-center w-full max-w-6xl px-8 mx-auto mt-20 ">
+    <section id="services" class="flex flex-row items-center">
+      <div class="relative flex flex-col items-center w-full max-w-6xl px-8 mx-auto mt-48 ">
         <span class="text-sm tracking-widest text-pink-500 uppercase">Our Services</span>
         <div class="mt-8 font-['Nunito'] max-w-md text-center font-bold text-2xl lg:text-4xl leading-tight">
           Provide Awesome Service With Our Tools
@@ -226,7 +221,7 @@
     </section>
 
     <!-- About Us section  -->
-    <section class="flex flex-row items-center ">
+    <section id="about" class="flex flex-row items-center ">
       <div class="flex flex-col items-center w-full max-w-6xl gap-12 px-8 mx-auto mt-48 lg:flex-row">
         <div class="w-full max-w-md p-5 lg:w-1/2">
           <svg height="0" width="0">
@@ -285,13 +280,14 @@
         </div>
       </div>
     </section>
-
+    <span class="invisible" id="contact"></span>
     <!-- Contact Us section -->
     <section class="flex flex-row items-center mt-48 bg-center bg-cover bg-bottom-pattern ">
       <div class="flex flex-col items-center w-full max-w-6xl gap-12 px-8 mx-auto lg:flex-row">
         <div class="hidden lg:block lg:w-1/2"></div>
         <div class="w-full lg:max-w-md">
-          <div class="flex flex-col justify-center gap-12 px-8 py-10 m-8 text-center text-white bg-gradient-to-b from-pink-500 to-orange-400">
+          <div
+            class="flex flex-col justify-center gap-12 px-8 py-10 m-8 text-center text-white bg-gradient-to-b from-pink-500 to-orange-400">
             <h5 class="text-3xl font-bold">
               Interested to<br />
               Digging Dipper?
@@ -300,8 +296,7 @@
               We're out to create purposeful spaces that balance art and
               creativity with science and strategy.
             </p>
-            <a href="contact.html"
-              class="self-center py-4 text-xl font-medium border border-pink-100 rounded-full px-9">Contact Us</a>
+            <a href="#" class="self-center py-4 text-xl font-medium border border-pink-100 rounded-full px-9">Contact Us</a>
           </div>
         </div>
       </div>
@@ -399,7 +394,7 @@
       myFunction();
     };
 
-    
+
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function myFunction() {
       if (window.pageYOffset >= 100) {
