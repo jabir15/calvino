@@ -209,8 +209,7 @@
           <svg width="400" height="280" viewBox="0 0 400 280">
             <defs>
               <pattern id="hideout" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path class="text-gray-200" fill="currentColor"
-                  d="M 20 18 a 1 1 0 0 0 0 5 A 1 1 0 0 0 20 18z" />
+                <path class="text-gray-200" fill="currentColor" d="M 20 18 a 1 1 0 0 0 0 5 A 1 1 0 0 0 20 18z" />
               </pattern>
             </defs>
             <rect x="0" y="0" width="400" height="280" fill="url(#hideout)"></rect>
@@ -279,6 +278,27 @@
         </div>
       </div>
     </section>
+    <section id="pricing" class="flex flex-row items-center">
+      <div class="relative flex flex-col items-center w-full max-w-6xl px-8 mx-auto mt-48 ">
+        <span class="text-sm tracking-widest text-pink-500 uppercase">Pricing Plan</span>
+        <div class="mt-8 font-['Nunito'] max-w-md text-center font-bold text-2xl lg:text-4xl leading-tight">
+          Choose Your Best Pricing Plan
+        </div>
+        <label
+          class="relative flex items-center p-1 mt-10 text-sm font-bold text-center uppercase bg-gray-300 rounded w-72">
+          <input type="checkbox" class="appearance-none peer" />
+          <span
+            class="w-1/2 py-1 text-black z-[1] transition-colors duration-300 ease-in peer-checked:text-gray-100">Monthly</span>
+          <span
+            class="w-1/2 py-1 z-[1] text-gray-100 transition-colors duration-300 ease-in peer-checked:text-black">Yearly</span>
+          <span
+            class="absolute inset-0 z-0 w-[140px] m-1 transition-transform duration-300 ease-in bg-white rounded peer-checked:translate-x-full"></span>
+        </label>
+        <div class="flex flex-col gap-8 mt-20 lg:flex-row">
+
+        </div>
+      </div>
+    </section>
     <span class="invisible" id="contact"></span>
     <!-- Contact Us section -->
     <section class="flex flex-row items-center mt-48 bg-center bg-cover bg-bottom-pattern ">
@@ -309,7 +329,7 @@
         <a href="index.html">
           <img class="h-10"
             src="data:image/webp;base64,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" />
-          </a>
+        </a>
         <p>Lorem, ipsum.</p>
       </div>
       <div class="w-full lg:w-1/5">
