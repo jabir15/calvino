@@ -289,20 +289,20 @@
           <label class="w-1/3 z-[1] cursor-pointer">
             <input id="monthly" type="radio" onclick="changeToggler();" name="price" class="appearance-none peer" checked="checked" />
             <span
-              class="-ml-1 text-gray-100 transition-colors duration-300 ease-in peer-checked:text-black">Monthly</span>
+              class="-ml-2 text-gray-100 transition-colors duration-300 ease-in delay-150 peer-checked:text-black">Monthly</span>
           </label>
           <label class="w-1/3 z-[1] cursor-pointer">
             <input id="yearly" type="radio" onclick="changeToggler();" name="price" class="appearance-none peer" />
             <span
-              class="text-gray-100 transition-colors duration-300 ease-in peer-checked:text-black">Yearly</span>
+              class="text-gray-100 transition-colors duration-300 ease-in delay-150 peer-checked:text-black">Yearly</span>
           </label>
           <label class="w-1/3 z-[1] cursor-pointer">
             <input id="oneoff" type="radio" onclick="changeToggler();" name="price" class="appearance-none peer " />
             <span
-              class="text-gray-100 transition-colors duration-300 ease-in peer-checked:text-black">One-off</span>
+              class="ml-1 text-gray-100 transition-colors duration-300 ease-in delay-150 peer-checked:text-black">One-off</span>
           </label>
           <span id="toggler"
-            class="absolute top-0 left-0.5 bottom-0 z-0 w-[101.3px] m-1.5 transition-transform duration-300 ease-in bg-white rounded translate-x-0"></span>
+            class="absolute top-0 left-0 bottom-0 z-0 w-[106px] m-0.5 transition-transform duration-300 ease-in bg-white rounded translate-x-0"></span>
         </div>
         <div class="flex flex-col gap-8 mt-20 lg:flex-row">
 
@@ -462,16 +462,16 @@
 
       if (monthRdBtn.checked) {
         toggler.classList.add("translate-x-0");
-        toggler.classList.remove("translate-x-[101.3px]");
-        toggler.classList.remove("translate-x-[203px]");
+        toggler.classList.remove("translate-x-[106px]");
+        toggler.classList.remove("translate-x-[210px]");
       } else if (yearRdBtn.checked) {
         toggler.classList.remove("translate-x-0");
-        toggler.classList.remove("translate-x-[203px]");
-        toggler.classList.add("translate-x-[101.3px]");
+        toggler.classList.remove("translate-x-[210px]");
+        toggler.classList.add("translate-x-[106px]");
       } else if (oneoffRdBtn.checked) {
         toggler.classList.remove("translate-x-0");
-        toggler.classList.remove("translate-x-[101.3px]");
-        toggler.classList.add("translate-x-[203px]");
+        toggler.classList.remove("translate-x-[106px]");
+        toggler.classList.add("translate-x-[210px]");
       }
     }
   </script>
